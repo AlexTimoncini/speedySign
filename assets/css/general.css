@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root {
+    /*COLORS*/
+    --white: #fff;
+    --black: #000;
+    --lgray: #eee;
+    --dgray: #6c6c6c;
+    --blue: #6865f7;
+    --yellow: #ffd166;
+    --error: #721c24;
+    /*FONTS*/
+    --mono: 'source-code-pro';
+    --display: 'Roboto', sans-serif;
+
+    /*PADDING*/
+    --paddingX: 20px;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: var(--white);
+    background: var(--blue);
+}
+
+::selection {
+    color: var(--white);
+    background: var(--blue);
+}
+
+body{
+    min-height: 100vh;
+    font-family: var(--display);
+    color: var(--black);
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+main{
+    min-height: calc(100vh - 70px);
+    overflow-y: auto;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*GENERAL CSS*/
+ul{
+    list-style: none;
+}
+.hidden{
+    display: none;
+}
+/*FONT*/
+@font-face {
+    font-family: 'Roboto';
+    src: url(../Roboto/Roboto-Regular.ttf) format('truetype');
+}

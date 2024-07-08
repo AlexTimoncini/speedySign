@@ -1,0 +1,14 @@
+/*NAVBAR*/
+nav{
+    height: 70px;
+    padding: 0 10px;
+    background-color: var(--lgray);
+}
+
+nav ul{
+    display: flex;
+    column-gap: px;
+}
+nav li{
+    border: 1px solid red;
+}
