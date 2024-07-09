@@ -1,14 +1,29 @@
 /*NAVBAR*/
 nav{
     height: 70px;
-    padding: 0 10px;
-    background-color: var(--lgray);
+    padding: 0 20px;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-between;
 }
-
+nav img{
+    display: block;
+    height: 70px;
+}
 nav ul{
     display: flex;
-    column-gap: px;
+    column-gap: 15px;
+    justify-content: right;
 }
 nav li{
-    border: 1px solid red;
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 15px 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+nav li:hover{
+    text-decoration: underline;
 }
